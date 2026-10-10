@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ARI² Lab — Autonomy, Robotics & Intelligent Interaction. Research in safe, intelligent, and resilient robotic systems at The University of Texas Permian Basin.">
+  <title>ARI² Lab | Autonomy, Robotics & Intelligent Interaction</title>
+  <style>
+    :root { color-scheme: light; --ink:#1d252c; --muted:#5e6a73; --accent:#1764ad; --line:#e2e6e8; --paper:#fff; --soft:#f6f7f8; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; font: 300 16px/1.7 "Helvetica Neue", Helvetica, Arial, sans-serif; color:var(--ink); background:var(--paper); }
+    h1, h2, h3, strong, .brand { font-weight:700; }
+    a { color:inherit; }
+    a:focus-visible { outline:3px solid var(--accent); outline-offset:4px; }
+    .wrap { width:min(1080px, calc(100% - 40px)); margin:auto; }
+    header { border-bottom:1px solid var(--line); background:white; }
+    .nav { display:flex; align-items:center; justify-content:space-between; gap:20px; min-height:76px; }
+    .brand { text-decoration:none; font-weight:700; font-size:1.32rem; letter-spacing:normal; white-space:nowrap; }
+    .brand sup, .hero h1 sup { color:var(--accent); font-size:.52em; position:relative; top:-.22em; }
+    nav { display:flex; flex-wrap:wrap; gap:22px; font-size:.9rem; font-weight:600; }
+    nav a { text-decoration:none; color:#42505a; }
+    nav a:hover { color:var(--accent); }
+    .hero { padding:90px 0 84px; border-bottom:1px solid var(--line); }
+    .eyebrow { text-transform:uppercase; font-size:.75rem; font-weight:700; letter-spacing:.17em; color:var(--accent); }
+    .hero h1 { font-size:clamp(3.6rem, 10vw, 6.4rem); line-height:1.15; letter-spacing:normal; margin:16px 0 4px; }
+    .expansion { font-size:clamp(1rem, 2.4vw, 1.35rem); font-weight:600; margin:0 0 30px; }
+    .tagline { font-size:clamp(1.3rem, 3vw, 1.85rem); line-height:1.45; max-width:790px; font-weight:300; margin:0 0 25px; }
+    .affiliation { color:var(--muted); font-size:.95rem; }
+    section { padding:76px 0; scroll-margin-top:30px; }
+    section + section { border-top:1px solid var(--line); }
+    h2 { font-size:clamp(1.9rem,4vw,2.5rem); letter-spacing:normal; line-height:1.25; margin:0 0 25px; }
+    h3 { font-size:1.16rem; line-height:1.35; margin:0 0 12px; }
+    p { margin:0 0 17px; font-weight:300; }
+    li { font-weight:300; }
+    .about { max-width:none; }
+    .intro { color:var(--muted); max-width:790px; margin-bottom:28px; }
+    .grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:18px; }
+    .research-card { border:1px solid var(--line); border-radius:12px; padding:27px; background:var(--paper); }
+    .research-card .number { display:block; color:var(--accent); font:700 .78rem/1.4 ui-monospace,SFMono-Regular,Consolas,monospace; margin-bottom:12px; }
+    .research-card p { color:#43515a; font-size:.96rem; }
+    .projects { border-top:1px solid var(--line); padding-top:15px; margin-top:19px; font-size:.92rem; }
+    .projects strong { display:block; margin-bottom:5px; }
+    .projects ul { margin:5px 0 0; padding-left:19px; }
+    .projects li { margin:3px 0; }
+    .note { background:var(--soft); padding:28px; border-radius:12px; color:var(--muted); }
+    footer { background:var(--soft); border-top:1px solid var(--line); padding:30px 0; color:var(--muted); font-size:.9rem; }
+    footer .wrap { display:flex; justify-content:space-between; gap:16px; flex-wrap:wrap; }
+    @media (max-width:720px) { .nav { align-items:flex-start; flex-direction:column; padding:17px 0; gap:10px; } nav { gap:15px; } .hero { padding:62px 0; } section { padding:55px 0; } .grid { grid-template-columns:1fr; } .research-card { padding:23px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="#home" aria-label="ARI squared Lab home">ARI<sup>2</sup> LAB</a>
+      <nav aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#research">Research</a>
+        <a href="#collaborators">Collaborators</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="hero" id="home">
+      <div class="wrap">
+        <div class="eyebrow">Robotics research laboratory</div>
+        <h1>ARI<sup>2</sup> Lab</h1>
+        <p class="expansion">Autonomy, Robotics &amp; Intelligent Interaction</p>
+        <p class="tagline">Advancing robotics and automation for safe, intelligent, and reliable systems in the real world.</p>
+        <p class="affiliation">Mechanical Engineering · The University of Texas Permian Basin</p>
+      </div>
+    </div>
+
+    <section id="about">
+      <div class="wrap">
+        <div class="eyebrow">Who we are</div>
+        <h2>About the Lab</h2>
+        <p><strong>ARI² Lab (Autonomy, Robotics &amp; Intelligent Interaction)</strong> brings together robotics, automation, and Embodied AI to develop intelligent systems capable of operating safely and reliably in the real world. Our research spans autonomous systems, multi-robot control, multimodal sensing, human–robot interaction, robot safety, robot learning, and spatial computing.</p>
+        <p>At the heart of our research is <strong>safe and resilient autonomy</strong>, from passively safe mechanical designs to intelligent control, AI guardrails, sensor redundancy, and robust control strategies for operation in complex, unstructured environments. Students gain hands-on experience designing, programming, integrating, and experimentally evaluating these technologies on real robotic systems.</p>
+        <p>Our research addresses challenges in <strong>energy, infrastructure, advanced manufacturing, healthcare, nursing, and other human-centered or safety-critical environments</strong>, creating opportunities for interdisciplinary research, industry partnerships, and regional collaboration.</p>
+      </div>
+    </section>
+
+    <section id="research">
+      <div class="wrap">
+        <div class="eyebrow">What we work on</div>
+        <h2>Research Areas</h2>
+        <p class="intro">Our research spans five interconnected areas, from autonomous navigation and multi-robot coordination to intelligent interaction, resilient connectivity, and robotic safety.</p>
+        <div class="grid">
+          <article class="research-card">
+            <span class="number">01 / FIELD ROBOTICS</span>
+            <h3>Autonomous Field Robotics</h3>
+            <p>Advancing autonomous navigation, perception, and localization for robotic systems operating in complex and unstructured environments. Research encompasses multimodal sensor fusion, motion planning, and robust autonomy under uncertain environmental conditions.</p>
+            <div class="projects"><strong>Representative projects</strong><ul><li>LiDAR-inertial SLAM</li><li>GNSS-denied navigation</li><li>Vision-language navigation</li><li>Terrain-aware motion planning</li></ul></div>
+          </article>
+          <article class="research-card">
+            <span class="number">02 / MULTI-ROBOT SYSTEMS</span>
+            <h3>Heterogeneous Multi-Robot Systems</h3>
+            <p>Developing coordinated control and distributed autonomy for heterogeneous robotic teams comprising legged robots, mobile manipulators, and aerial robots. Research addresses cooperative sensing, relative localization, and control strategies for collaborative tasks involving robots with complementary capabilities.</p>
+            <div class="projects"><strong>Representative projects</strong><ul><li>Multi-robot cluster-space control</li><li>Decentralized coordination and control policies</li><li>Cooperative manipulation</li></ul></div>
+          </article>
+          <article class="research-card">
+            <span class="number">03 / HUMAN–ROBOT INTERACTION</span>
+            <h3>Spatial Computing and Shared Autonomy</h3>
+            <p>Integrating spatial computing and intelligent control for local and remote human–robot interaction. Research encompasses augmented and mixed reality, robot intent visualization, intelligent constraints, and human-in-the-loop shared autonomy.</p>
+            <div class="projects"><strong>Representative projects</strong><ul><li>AR-based robot interaction</li><li>Constrained teleoperation</li><li>Preference-aware shared autonomy</li></ul></div>
+          </article>
+          <article class="research-card">
+            <span class="number">04 / RESILIENT CONNECTIVITY</span>
+            <h3>Adaptive and Resilient Connectivity</h3>
+            <p>Investigating adaptive wireless communication and autonomous deployment of mobile communication infrastructure in remote and infrastructure-limited environments. Research addresses decentralized network coordination, communication-aware robot positioning, and dynamic network reconfiguration.</p>
+            <div class="projects"><strong>Representative projects</strong><ul><li>Elastic Mobile Infrastructure on Demand (eMID)</li><li>UWB-based localization</li><li>Self-reconfiguring robotic mesh networks</li></ul></div>
+          </article>
+          <article class="research-card">
+            <span class="number">05 / ROBOT SAFETY</span>
+            <h3>Safe and Compliant Robotic Systems</h3>
+            <p>Investigating compliant actuation and variable-stiffness mechanisms for safe physical human–robot interaction. Research addresses passive mechanical safety, interaction-dependent stiffness regulation, and safety-performance tradeoffs in collaborative and wearable robotic systems.</p>
+            <div class="projects"><strong>Representative projects</strong><ul><li>Variable Series Elastic Actuators (vSEA)</li><li>Passively safe robotic joints</li><li>Interaction-dependent stiffness control</li></ul></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="collaborators" aria-labelledby="collaborators-title">
+      <div class="wrap">
+        <div class="eyebrow">Research partnerships</div>
+        <h2 id="collaborators-title">ARI² Lab Collaborators</h2>
+        <p class="intro">Research groups and laboratories collaborating with ARI² Lab.</p>
+        <div class="grid">
+          <article class="research-card">
+            <h3>Robotic Systems Lab (RSL)</h3>
+            <p>Santa Clara University (SCU)</p>
+            <p><a href="https://www.scu.edu/engineering/labs--research/labs/robotic-systems-lab/" target="_blank" rel="noopener noreferrer">Visit RSL website ↗</a></p>
+          </article>
+          <article class="research-card">
+            <h3>HMI² Lab</h3>
+            <p>Santa Clara University (SCU)</p>
+            <p><a href="https://sites.google.com/view/hmi2lab/the-team" target="_blank" rel="noopener noreferrer">Visit HMI² Lab website ↗</a></p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section id="contact" aria-labelledby="contact-title">
+      <div class="wrap">
+        <div class="eyebrow">Get in touch</div>
+        <h2 id="contact-title">Contact</h2>
+        <p><strong>Director: Manoj Sharma, PhD</strong></p>
+        <p>Assistant Professor | Department of Civil and Mechanical Engineering</p>
+        <p>The University of Texas Permian Basin</p>
+        <p><strong>Phone:</strong> <a href="tel:+14325523446">+1 (432) 552-3446</a> &nbsp;|&nbsp; <strong>Email:</strong> <a href="mailto:sharma_m@utpb.edu">sharma_m@utpb.edu</a></p>
+        <p><strong>Website:</strong> <a href="https://www.mk-sharma.com" target="_blank" rel="noopener noreferrer">www.mk-sharma.com ↗</a></p>
+      </div>
+    </section>
+  </main>
+  <footer><div class="wrap"><span>© <span id="year">2026</span> ARI² Lab</span><span>Autonomy, Robotics &amp; Intelligent Interaction · UTPB</span></div></footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
